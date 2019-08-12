@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .numbers{
+      margin-left: 32px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: paleturquoise;
+
+    }
+
+    /* .b1{
+    } */
+
+  </style>
+
+</head>
+<body>
+  <!-- {{nums}} -->
+  <h1> Lotto 추첨 </h1>
+  <p>[</p>
+{% for num in nums %}
+  <p style="margin-left: 32px;">{{ num }},</p>
+  <p class="numbers">{{ num }},</p>
+{% endfor %}
+<p>]</p>
+
+<h1>DTL 조건문</h1>
+{% if 3 > 2 %}
+  <p>이건 참일 때,</p>
+  {{ number }}
+{% endif %}
+</body>
+</html>
